@@ -7,7 +7,7 @@ import json
 import requests
 from requests.exceptions import Timeout
 
-import models
+import .models
 
 
 # NOTE: Have found that Yummly's API "hangs" so it might be a good idea to have
