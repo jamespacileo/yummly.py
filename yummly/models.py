@@ -5,7 +5,7 @@ from inspect import getargspec
 
 
 class Storage(dict):
-    """An object that is like a dict except `obj.foo` can be used in addition
+    """An object that is like a dict except `obj.foo` can be used in additionit
     to `obj['foo']`.
 
     Raises Attribute/Key errors for missing references.
@@ -93,7 +93,7 @@ class Recipe(Storage):
         # to lowercase since search results' flavor keys are lowercase.
         flavors = kargs.get('flavors') or {}
         self.flavors = Flavors(**{key.lower(): value
-                                  for key, value in flavors.iteritems()})
+                                  for key, value in flavors.items()})
 
         self.nutritionEstimates = [NutritionEstimate(**nute)
                                    for nute in (kargs.get('nutritionEstimates')
