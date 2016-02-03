@@ -27,7 +27,7 @@ def handle_errors(func):
         self._handle_errors_count = 0
 
         # try to get response until retry limit reached
-        for retry in xrange(0, self.retries + 1):
+        for retry in range(0, self.retries + 1):
             try:
                 response = func(self, *args, **kargs)
             except Timeout:
